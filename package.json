@@ -1,0 +1,14 @@
+{
+  "name": "js-sandbox",
+  "version": "1.0.0",
+  "description": "A lightweight JavaScript sandbox desktop app by Carolina Codeworks",
+  "author": "Carolina Codeworks",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron . --no-sandbox"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0"
+  }
+}
