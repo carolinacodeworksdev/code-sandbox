@@ -1,154 +1,138 @@
-# ⬡ JS Sandbox
+# JavaScript Sandbox
+### by Carolina Codeworks
 
-**A free, lightweight JavaScript scratchpad for your desktop.**  
-Write code, see results instantly — no browser tabs, no setup, no fluff.
+A lightweight desktop JavaScript sandbox built with Tauri, Vite, and vanilla JavaScript.
 
-Made with ♥ by **[Carolina Codeworks](https://github.com/carolinacodeworks)**
+Designed for beginners who want a clean place to practice JavaScript and see live output instantly.
 
 ---
 
 ## Features
 
-- ✅ Syntax-highlighted editor with One Dark theme
-- ✅ Full console output — `log`, `warn`, `error`, `info` all captured
-- ✅ Objects and arrays pretty-printed
-- ✅ Multiple tabs
-- ✅ Resizable editor / console split pane
-- ✅ Timestamps on every log entry
-- ✅ Word wrap toggle
-- ✅ Auto-scroll toggle
-- ✅ 100% free, no license key, no account required
+- Live JavaScript output
+- Split-screen editor and console
+- Theme customization
+- Font settings
+- Lightweight desktop app
+- Cross-platform support
+- Open source
 
 ---
 
-## Keyboard Shortcuts
+# Installation
 
-| Shortcut | Action |
-|---|---|
-| `Ctrl+Enter` | Run code |
-| `Ctrl+/` | Toggle comment on selected line(s) |
-| `Tab` | Indent (2 spaces) |
+## Linux
+
+### Option 1: AppImage (Recommended)
+
+1. Download the latest `.AppImage` release
+2. Make it executable:
+
+```bash
+chmod +x carolina-js-sandbox.AppImage
+```
+
+3. Run the app:
+
+```bash
+./carolina-js-sandbox.AppImage
+```
+
+### Optional: Desktop Integration
+
+Move the AppImage somewhere permanent:
+
+```bash
+mkdir -p ~/Applications
+mv carolina-js-sandbox.AppImage ~/Applications/
+```
+
+Then create a desktop launcher.
 
 ---
 
-## Installation
+## Windows
 
-### 🐧 Linux (Ubuntu, Debian, Mint, Fedora, and most others)
-
-**Prerequisites:** Node.js v18 or higher.
-
-Check if you have it:
-```bash
-node --version
-```
-
-If not, install it:
-```bash
-# Ubuntu / Debian / Mint
-sudo apt install nodejs npm
-
-# Fedora
-sudo dnf install nodejs
-```
-
-**Install JS Sandbox:**
-```bash
-unzip jssandbox.zip
-cd jssandbox
-chmod +x install.sh
-./install.sh
-```
-
-The installer will:
-- Install Electron automatically (one-time, ~100MB)
-- Add `jssandbox` as a terminal command
-- Add **JS Sandbox** to your application launcher/menu
-
-**Launch it:**
-```bash
-jssandbox
-```
-Or search **"JS Sandbox"** in your app menu and pin it to your dock.
-
-> **Note for Linux users:** If you see a sandbox permission error mentioning `chrome-sandbox`, don't worry — this app already handles that automatically.
+1. Download the latest `.exe` installer from Releases
+2. Double-click installer
+3. Follow installation prompts
+4. Launch from Start Menu
 
 ---
 
-### 🪟 Windows
+## macOS
 
-**Prerequisites:** Node.js v18 or higher — download from [nodejs.org](https://nodejs.org).
+1. Download the latest `.dmg`
+2. Open the DMG
+3. Drag the app into Applications
+4. Launch normally
 
-1. Extract `jssandbox.zip` to a folder of your choice (e.g. `C:\Tools\jssandbox`)
-2. Open that folder in **File Explorer**
-3. Hold `Shift`, right-click an empty area, and choose **"Open PowerShell window here"**
-4. Run:
+If macOS blocks the app:
 
-```powershell
+- Open **System Settings**
+- Go to **Privacy & Security**
+- Click **Open Anyway**
+
+---
+
+# Development Setup
+
+## Requirements
+
+- Node.js
+- Rust
+- Cargo
+
+---
+
+## Clone Project
+
+```bash
+git clone js-sandbox
+cd carolina-js-sandbox
+```
+
+---
+
+## Install Dependencies
+
+```bash
 npm install
-npx electron .
 ```
-
-**To create a desktop shortcut:**
-- Right-click your desktop → New → Shortcut
-- For the location, enter:
-  ```
-  cmd /c "cd /d C:\Tools\jssandbox && npx electron ."
-  ```
-  *(adjust the path to where you extracted the zip)*
-- Name it **JS Sandbox** and you're done
 
 ---
 
-### 🍎 macOS
+## Run Development Mode
 
-**Prerequisites:** Node.js v18 or higher — download from [nodejs.org](https://nodejs.org) or install via Homebrew:
 ```bash
-brew install node
+npm run dev
 ```
 
-**Install JS Sandbox:**
+---
+
+## Build Production App
+
 ```bash
-unzip jssandbox.zip
-cd jssandbox
-npm install
-npx electron .
+npm run build
 ```
 
-**To launch it easily in future:**
-Add an alias to your `~/.zshrc` or `~/.bash_profile`:
-```bash
-echo 'alias jssandbox="cd ~/path/to/jssandbox && npx electron ."' >> ~/.zshrc
-source ~/.zshrc
-```
-Then just type `jssandbox` in any terminal.
+---
+
+# Built With
+
+- Tauri
+- Vite
+- Vanilla JavaScript
 
 ---
 
-## Uninstall
+# License
 
-### Linux
-```bash
-rm -rf ~/.local/share/jssandbox
-rm ~/.local/bin/jssandbox
-rm ~/.local/share/applications/jssandbox.desktop
-```
-
-### Windows / macOS
-Delete the folder you extracted the zip into. That's it — nothing is written to your system.
+MIT License
 
 ---
 
-## About
+# Author
 
-JS Sandbox is a free tool built and released by **Carolina Codeworks**.  
-We build practical tools for developers. This one's on us.
-
----
-
-## License
-
-MIT — free to use, share, and modify. Attribution appreciated but not required.
-
----
-
-*Carolina Codeworks — building things that work.*
+Brian Springer 
+Carolina Codeworks
