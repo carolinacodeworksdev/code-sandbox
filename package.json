@@ -1,7 +1,7 @@
 {
   "name": "carolina-js-sandbox",
   "version": "1.0.0",
-  "description": "A lightweight beginner-friendly JavaScript sandbox by Carolina Codeworks.",
+  "description": "A lightweight beginner-friendly coding sandbox by Carolina Codeworks.",
   "private": false,
   "type": "module",
   "scripts": {

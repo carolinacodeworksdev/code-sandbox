@@ -5,7 +5,7 @@ const app = document.querySelector('#app');
 const starterCode = `// Welcome to JavaScript Sandbox by Carolina Codeworks
 // Try editing this code. The output updates live.
 
-const name = "Brian";
+const name = "User";
 console.log("Hello, " + name + "!");
 
 for (let i = 1; i <= 3; i++) {

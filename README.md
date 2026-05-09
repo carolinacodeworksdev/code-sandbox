@@ -1,15 +1,15 @@
-# JavaScript Sandbox
+# Coding Sandbox
 ### by Carolina Codeworks
 
-A lightweight desktop JavaScript sandbox built with Tauri, Vite, and vanilla JavaScript.
+A lightweight desktop coding sandbox built with Tauri, Vite, and vanilla JavaScript.
 
-Designed for beginners who want a clean place to practice JavaScript and see live output instantly.
+Designed for beginners who want a clean place to practice coding and see live output instantly.
 
 ---
 
 ## Features
 
-- Live JavaScript output
+- Live code output
 - Split-screen editor and console
 - Theme customization
 - Font settings
